@@ -124,18 +124,18 @@ export default function Hero() {
             ))}
           </motion.div>
         </motion.div>
-
-        {/* Scroll indicator */}
-        <motion.div
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-text-muted"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-        >
-          <span className="text-xs font-mono">scroll</span>
-          <div className="w-px h-10 bg-gradient-to-b from-text-muted to-transparent animate-float" />
-        </motion.div>
       </div>
+
+      {/* Scroll indicator — anchored to section bottom, never overlaps content */}
+      <motion.div
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-1 text-text-muted"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5 }}
+      >
+        <span className="text-xs font-mono">scroll</span>
+        <div className="w-px h-10 bg-gradient-to-b from-text-muted to-transparent animate-float" />
+      </motion.div>
     </section>
   )
 }
