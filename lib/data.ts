@@ -5,8 +5,8 @@ export const personalInfo = {
   tagline: 'Building confidence in software through systematic quality engineering.',
   bio: 'I am a QA Engineer with 7+ years of experience in test automation, quality strategy, and CI/CD integration. I specialize in building robust automation frameworks with Playwright, Cypress, and Selenium — ensuring software ships reliably at scale.',
   github: 'https://github.com/vinayms96',
-  linkedin: 'https://linkedin.com/in/vinayms', // Update with your actual LinkedIn URL
-  email: 'vinay@example.com', // Update with your actual email
+  linkedin: 'https://www.linkedin.com/in/vinay-m-s/',
+  email: 'vinay96ms@outlook.com',
   location: 'Bengaluru, India',
 }
 
