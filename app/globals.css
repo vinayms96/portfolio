@@ -4,12 +4,35 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Font variables — not theme-dependent, stay in :root */
 :root {
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
 }
 
 @layer base {
+  /* ── Theme tokens ─────────────────────────────── */
+  :root {
+    --color-background: #f8f8f8;
+    --color-surface: #ffffff;
+    --color-surface-2: #efefef;
+    --color-border: #e0e0e0;
+    --color-text-primary: #0f0f0f;
+    --color-text-secondary: #404040;
+    --color-text-muted: #737373;
+  }
+
+  .dark {
+    --color-background: #0f0f0f;
+    --color-surface: #1a1a1a;
+    --color-surface-2: #222222;
+    --color-border: #2a2a2a;
+    --color-text-primary: #f5f5f5;
+    --color-text-secondary: #a3a3a3;
+    --color-text-muted: #525252;
+  }
+
+  /* ── Base styles ──────────────────────────────── */
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 64px;
@@ -38,36 +61,11 @@
 }
 
 @layer utilities {
-  .animate-delay-100 {
-    animation-delay: 100ms;
-  }
-  .animate-delay-200 {
-    animation-delay: 200ms;
-  }
-  .animate-delay-300 {
-    animation-delay: 300ms;
-  }
-  .animate-delay-400 {
-    animation-delay: 400ms;
-  }
-  .animate-delay-500 {
-    animation-delay: 500ms;
-  }
-
   .text-gradient {
     @apply bg-clip-text text-transparent;
     background-image: linear-gradient(135deg, #818cf8 0%, #a78bfa 40%, #6366f1 100%);
     background-size: 200% auto;
     animation: shimmer 3s linear infinite;
-  }
-
-  .card-hover {
-    @apply transition-all duration-300 ease-out;
-  }
-  .card-hover:hover {
-    @apply -translate-y-1;
-    border-color: rgba(99, 102, 241, 0.6);
-    box-shadow: 0 8px 30px rgba(99, 102, 241, 0.12);
   }
 
   .section-container {

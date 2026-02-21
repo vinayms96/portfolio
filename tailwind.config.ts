@@ -10,19 +10,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: '#0f0f0f',
-        surface: '#1a1a1a',
-        'surface-2': '#222222',
-        border: '#2a2a2a',
+        background: 'var(--color-background)',
+        surface: 'var(--color-surface)',
+        'surface-2': 'var(--color-surface-2)',
+        border: 'var(--color-border)',
         accent: {
           DEFAULT: '#6366f1',
           hover: '#4f46e5',
           muted: 'rgba(99,102,241,0.12)',
         },
         text: {
-          primary: '#f5f5f5',
-          secondary: '#a3a3a3',
-          muted: '#525252',
+          primary: 'var(--color-text-primary)',
+          secondary: 'var(--color-text-secondary)',
+          muted: 'var(--color-text-muted)',
         },
       },
       fontFamily: {
@@ -30,10 +30,6 @@ const config: Config = {
         mono: ['var(--font-mono)', 'monospace'],
       },
       keyframes: {
-        'fade-in-up': {
-          '0%': { opacity: '0', transform: 'translateY(24px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
-        },
         blink: {
           '0%, 100%': { opacity: '1' },
           '50%': { opacity: '0' },
@@ -46,17 +42,11 @@ const config: Config = {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-8px)' },
         },
-        'pulse-glow': {
-          '0%, 100%': { boxShadow: '0 0 8px rgba(99,102,241,0.4)' },
-          '50%': { boxShadow: '0 0 20px rgba(99,102,241,0.8)' },
-        },
       },
       animation: {
-        'fade-in-up': 'fade-in-up 0.6s ease-out forwards',
         blink: 'blink 1s step-end infinite',
         shimmer: 'shimmer 3s linear infinite',
         float: 'float 4s ease-in-out infinite',
-        'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
       },
       backgroundImage: {
         'grid-pattern':

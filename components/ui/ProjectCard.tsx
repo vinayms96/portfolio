@@ -12,9 +12,15 @@ interface ProjectCardProps {
 export default function ProjectCard({ project, index }: ProjectCardProps) {
   return (
     <motion.div
-      className="relative flex flex-col h-full bg-surface border border-border rounded-xl p-6 card-hover"
+      className="relative flex flex-col h-full bg-surface border border-border rounded-xl p-6
+                 transition-colors duration-300 hover:border-accent/60"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{
+        y: -4,
+        boxShadow: '0 8px 30px rgba(99, 102, 241, 0.12)',
+        transition: { duration: 0.2, ease: 'easeOut' },
+      }}
       viewport={{ once: true, margin: '-50px' }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
