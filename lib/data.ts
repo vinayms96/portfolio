@@ -51,6 +51,13 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: 'SauceDemo Playwright Automation Suite',
+    description:
+      'Comprehensive test automation framework for SauceDemo e-commerce application using Playwright and TypeScript. Implements the Page Object Model pattern with tests for authentication, shopping workflows, and checkout flows. Includes 13+ tests with parallel execution, screenshot capture, and detailed HTML reporting.',
+    tags: ['Playwright', 'TypeScript', 'E2E Testing', 'POM'],
+    githubUrl: 'https://github.com/vinayms96/saucedemo_playwright',
+  },
+  {
     title: 'Cypress E2E Automation Suite',
     description:
       'End-to-end test automation framework for a Progressive Web App (PWA) using Cypress. Covers critical user journeys including authentication, product catalog, and checkout flows with comprehensive test reporting.',
@@ -63,13 +70,6 @@ export const projects: Project[] = [
       'Data-driven Selenium automation framework with ExtentReports integration for rich HTML test reports. Built for Magento 2.3 e-commerce regression testing with reusable utilities.',
     tags: ['Java', 'Selenium', 'ExtentReports', 'Magento'],
     githubUrl: 'https://github.com/vinayms96/AutoFrame_ExtentReports',
-  },
-  {
-    title: 'Magento 2.3 Test Suite',
-    description:
-      'Comprehensive Java-based test suite for Magento 2.3 covering UI and API layers. Implements the Page Object Model pattern for maintainable, scalable test architecture.',
-    tags: ['Java', 'Selenium', 'POM', 'API Testing', 'Magento'],
-    githubUrl: 'https://github.com/vinayms96/Magento2.3',
   },
 ]
 
@@ -87,34 +87,50 @@ export type ExperienceEntry = {
 
 export const experiences: ExperienceEntry[] = [
   {
-    company: 'Powerschool India Pvt Ltd',
+    company: 'PowerSchool India Pvt Ltd',
     role: 'QA Engineer II',
-    duration: '4 years',
-    period: '2021 — Present',
+    duration: '2 years',
+    period: 'Apr 2024 — Present',
     location: 'Bengaluru, India',
     description:
-      'Leading quality engineering efforts for EdTech SaaS products used by K-12 schools worldwide. Responsible for test strategy, automation architecture, and release quality sign-off.',
+      'Leading quality engineering for EdTech products used by K-12 schools worldwide. Driving test strategy, automation architecture, and release quality sign-off across product teams.',
     highlights: [
-      'Built and maintained Playwright-based E2E automation suite from the ground up',
-      'Implemented performance and load testing pipelines with k6',
-      'Containerized test environments using Docker for consistent CI execution',
-      'Collaborated with cross-functional teams on test planning and risk assessment',
+      'Built and maintained Cypress-based E2E automation suite covering critical user workflows',
+      'Set up CI/CD pipelines to execute automated test suites on regular intervals and on every deployment',
+      'Implemented performance and load testing applications using k6 to ensure system scalability',
+      'Collaborated with cross-functional teams on test planning, risk assessment, and release readiness',
     ],
     current: true,
   },
   {
-    company: 'Codilar Technologies Pvt Ltd',
-    role: 'QA Engineer',
-    duration: '3 years',
-    period: '2018 — 2021',
+    company: 'PowerSchool India Pvt Ltd',
+    role: 'QA Engineer I',
+    duration: '2 years 4 months',
+    period: 'Dec 2021 — Mar 2024',
     location: 'Bengaluru, India',
     description:
-      'Quality assurance for Magento e-commerce platforms. Developed and maintained automated regression suites and championed best practices across project teams.',
+      'Responsible for manual and automation testing of EdTech platform features. Worked closely with developers and product managers to ensure quality across functional and regression test cycles.',
     highlights: [
-      'Automated regression testing for Magento 2.x using Selenium WebDriver and Java',
-      'Developed Cypress automation for Progressive Web App (PWA) storefronts',
-      'Created reusable test utilities and rich reporting frameworks with ExtentReports',
-      'Mentored junior QA members on automation frameworks and testing strategies',
+      'Designed and executed test cases, test scenarios, and test plans for new features and releases',
+      'Reported and tracked defects in defect tracking tools, ensuring timely resolution',
+      'Contributed to building Cypress automation scripts and managing them in version control',
+      'Participated in sprint ceremonies and provided QA sign-off for production deployments',
+    ],
+    current: false,
+  },
+  {
+    company: 'Codilar Technologies Pvt Ltd',
+    role: 'Software Test Engineer',
+    duration: '3 years 2 months',
+    period: 'Nov 2018 — Dec 2021',
+    location: 'Bengaluru, India',
+    description:
+      'Quality assurance for Magento-based e-commerce platforms. Developed automated regression suites and established testing best practices across project teams.',
+    highlights: [
+      'Automated regression testing for Magento 2.x storefronts using Selenium WebDriver and Java',
+      'Developed Cypress automation for Progressive Web App (PWA) e-commerce storefronts',
+      'Created reusable test utilities and rich HTML reporting frameworks with ExtentReports',
+      'Prepared test cases, test scenarios, and test plans; reported defects in defect tracking tools',
     ],
     current: false,
   },
