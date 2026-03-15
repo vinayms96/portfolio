@@ -9,7 +9,7 @@ interface ProjectCardProps {
   index: number
 }
 
-export default function ProjectCard({ project, index: _index }: ProjectCardProps) {
+export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <motion.div
       className="relative flex flex-col h-full bg-surface border border-border rounded-xl p-6
