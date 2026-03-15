@@ -58,6 +58,13 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/vinayms96/saucedemo_playwright',
   },
   {
+    title: 'AI-Powered k6 Performance Testing Framework',
+    description:
+      'Performance testing framework where AI generates complete, standards-compliant k6 scripts from natural language prompts. Integrates Claude and OpenAI APIs to interpret test requirements, scaffold TypeScript test files, and enforce framework conventions via safety guards. Supports 6 executor types (ramping VUs, constant arrival-rate, and more), custom Trend/Rate/Counter metrics, and per-method SLO thresholds across a full CRUD load test suite.',
+    tags: ['k6', 'TypeScript', 'AI', 'Performance Testing', 'Claude', 'OpenAI'],
+    githubUrl: 'https://github.com/vinayms96/performance-k6',
+  },
+  {
     title: 'Cypress E2E Automation Suite',
     description:
       'End-to-end test automation framework for a Progressive Web App (PWA) using Cypress. Covers critical user journeys including authentication, product catalog, and checkout flows with comprehensive test reporting.',
