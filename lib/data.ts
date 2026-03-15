@@ -21,17 +21,22 @@ export const skillCategories: SkillCategory[] = [
   {
     name: 'Test Automation',
     icon: '🤖',
-    skills: ['Playwright', 'Cypress', 'Selenium'],
+    skills: ['Playwright', 'Cypress', 'Selenium', 'ExtentReports'],
   },
   {
     name: 'Programming Languages',
     icon: '💻',
-    skills: ['Java', 'JavaScript', 'TypeScript'],
+    skills: ['Java', 'JavaScript', 'TypeScript', 'Python'],
   },
   {
     name: 'Performance & Load Testing',
     icon: '⚡',
     skills: ['k6'],
+  },
+  {
+    name: 'AI Integration',
+    icon: '🧠',
+    skills: ['Claude API', 'OpenAI API'],
   },
   {
     name: 'Infrastructure & Data',
