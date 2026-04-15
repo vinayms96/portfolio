@@ -1,7 +1,7 @@
 'use client'
 
 import { motion, type Variants } from 'framer-motion'
-import { Github, Linkedin, MapPin } from 'lucide-react'
+import { Github, Linkedin, Mail, MapPin } from 'lucide-react'
 import { useTypingEffect } from '@/hooks/useTypingEffect'
 import { personalInfo } from '@/lib/data'
 
@@ -82,7 +82,7 @@ export default function Hero() {
           </motion.p>
 
           {/* CTA buttons */}
-          <motion.div variants={item} className="mt-8 flex flex-wrap gap-4">
+          <motion.div variants={item} className="mt-8 flex items-center gap-3">
             <a
               href={personalInfo.github}
               target="_blank"
@@ -98,12 +98,23 @@ export default function Hero() {
               href={personalInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3
+              aria-label="LinkedIn"
+              className="inline-flex items-center justify-center w-11 h-11
                          border border-border text-text-secondary rounded-lg
-                         hover:border-accent hover:text-accent transition-all duration-200"
+                         hover:border-accent hover:text-accent hover:bg-accent/10
+                         transition-all duration-200"
             >
-              <Linkedin className="w-4 h-4" />
-              LinkedIn
+              <Linkedin className="w-5 h-5" />
+            </a>
+            <a
+              href={`mailto:${personalInfo.email}`}
+              aria-label="Email Me"
+              className="inline-flex items-center justify-center w-11 h-11
+                         border border-border text-text-secondary rounded-lg
+                         hover:border-accent hover:text-accent hover:bg-accent/10
+                         transition-all duration-200"
+            >
+              <Mail className="w-5 h-5" />
             </a>
           </motion.div>
 

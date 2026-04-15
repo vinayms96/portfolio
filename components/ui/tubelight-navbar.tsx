@@ -22,9 +22,11 @@ export function NavBar({ items, className }: NavBarProps) {
   // Sync active tab to scroll position
   useEffect(() => {
     const handleScroll = () => {
-      // When scrolled to the very bottom, force the last item (Contact/Footer)
-      const atBottom =
-        window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 80
+      // When footer is visible in the viewport, force the last item (Contact)
+      const footerEl = document.getElementById('footer')
+      const atBottom = footerEl
+        ? footerEl.getBoundingClientRect().top < window.innerHeight * 0.6
+        : window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 80
       if (atBottom) {
         setActiveTab(items[items.length - 1].name)
         return

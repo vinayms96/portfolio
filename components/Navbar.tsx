@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
-import { Zap, FolderOpen, Briefcase, Mail } from 'lucide-react'
+import { Zap, FolderOpen, Briefcase, GraduationCap, Mail } from 'lucide-react'
 import { personalInfo } from '@/lib/data'
 import { ThemeToggle } from '@/components/ui/theme-toggle'
 import { NavBar } from '@/components/ui/tubelight-navbar'
@@ -10,6 +10,7 @@ const navItems = [
   { name: 'Skills',     url: '#skills',     icon: Zap },
   { name: 'Projects',   url: '#projects',   icon: FolderOpen },
   { name: 'Experience', url: '#experience', icon: Briefcase },
+  { name: 'Education',  url: '#education',  icon: GraduationCap },
   { name: 'Contact',    url: '#footer',     icon: Mail },
 ]
 

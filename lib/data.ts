@@ -1,9 +1,9 @@
 // ─── Personal Info ────────────────────────────────────────────────────────────
 export const personalInfo = {
   name: 'Vinay MS',
-  role: 'QA Engineer II',
+  role: 'QA Automation Engineer',
   tagline: 'Building confidence in software through systematic quality engineering.',
-  bio: 'I am a QA Engineer with 7+ years of experience in test automation, quality strategy, and CI/CD integration. I specialize in building robust automation frameworks with Playwright, Cypress, and Selenium — ensuring software ships reliably at scale.',
+  bio: 'I am a QA Automation Engineer with 7+ years building scalable test frameworks with Playwright, Cypress, and Selenium. I specialise in end-to-end automation, CI/CD integration, and performance testing — shipping quality at speed. Actively upskilling in AI-driven testing and intelligent automation.',
   github: 'https://github.com/vinayms96',
   linkedin: 'https://www.linkedin.com/in/vinay-m-s/',
   email: 'vinay96ms@outlook.com',
@@ -21,7 +21,7 @@ export const skillCategories: SkillCategory[] = [
   {
     name: 'Test Automation',
     icon: '🤖',
-    skills: ['Playwright', 'Cypress', 'Selenium', 'ExtentReports'],
+    skills: ['Playwright', 'Cypress', 'Selenium'],
   },
   {
     name: 'Programming Languages',
@@ -41,7 +41,12 @@ export const skillCategories: SkillCategory[] = [
   {
     name: 'Infrastructure & Data',
     icon: '🛠',
-    skills: ['Docker', 'MySQL'],
+    skills: ['Docker', 'AWS', 'MySQL'],
+  },
+  {
+    name: 'Tools & Workflow',
+    icon: '🔧',
+    skills: ['Git', 'GitHub Actions', 'JIRA', 'Postman', 'ClaudeCode', 'Agile', 'Scrum'],
   },
 ]
 
@@ -56,32 +61,55 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: 'SauceDemo Playwright Automation Suite',
+    title: 'Playwright Test Automation Framework – SauceDemo',
     description:
-      'Comprehensive test automation framework for SauceDemo e-commerce application using Playwright and TypeScript. Implements the Page Object Model pattern with tests for authentication, shopping workflows, and checkout flows. Includes 13+ tests with parallel execution, screenshot capture, and detailed HTML reporting.',
+      'Structured around Page Object Model with strict separation of test logic and selectors. Automated end-to-end user flows including authentication, product selection, cart management, and checkout. 13+ test cases with parallel execution to reduce test cycle time.',
     tags: ['Playwright', 'TypeScript', 'E2E Testing', 'POM'],
     githubUrl: 'https://github.com/vinayms96/saucedemo_playwright',
   },
   {
-    title: 'AI-Powered k6 Performance Testing Framework',
+    title: 'AI-Driven Performance Testing Framework (k6)',
     description:
-      'Performance testing framework where AI generates complete, standards-compliant k6 scripts from natural language prompts. Integrates Claude and OpenAI APIs to interpret test requirements, scaffold TypeScript test files, and enforce framework conventions via safety guards. Supports 6 executor types (ramping VUs, constant arrival-rate, and more), custom Trend/Rate/Counter metrics, and per-method SLO thresholds across a full CRUD load test suite.',
+      'Generates standards-compliant k6 scripts from natural language prompts using Claude and OpenAI APIs. Supports multiple executor types, custom Trend/Rate/Counter metrics, and SLO-based thresholds. Covers full CRUD performance scenarios with validation guards to enforce framework conventions.',
     tags: ['k6', 'TypeScript', 'AI', 'Performance Testing', 'Claude', 'OpenAI'],
     githubUrl: 'https://github.com/vinayms96/performance-k6',
   },
   {
-    title: 'Cypress E2E Automation Suite',
+    title: 'Cypress Automation Suite – NexPWA',
     description:
-      'End-to-end test automation framework for a Progressive Web App (PWA) using Cypress. Covers critical user journeys including authentication, product catalog, and checkout flows with comprehensive test reporting.',
+      'Full-coverage test automation framework for a Progressive Web App using Cypress. Tackled PWA-specific challenges like service worker state and offline behaviour — areas traditional E2E tools often miss. Implemented comprehensive test reporting to streamline failure analysis.',
     tags: ['Cypress', 'JavaScript', 'E2E Testing', 'PWA'],
     githubUrl: 'https://github.com/vinayms96/Cypress_NexPWA',
   },
   {
     title: 'Java Selenium Framework with ExtentReports',
     description:
-      'Data-driven Selenium automation framework with ExtentReports integration for rich HTML test reports. Built for Magento 2.3 e-commerce regression testing with reusable utilities.',
+      'Data-driven Selenium automation framework for Magento 2.3 regression testing. Designed reusable utilities and modular components to reduce duplication. Integrated ExtentReports for rich HTML reporting, enhancing test visibility and debugging efficiency.',
     tags: ['Java', 'Selenium', 'ExtentReports', 'Magento'],
     githubUrl: 'https://github.com/vinayms96/AutoFrame_ExtentReports',
+  },
+]
+
+// ─── Education ────────────────────────────────────────────────────────────────
+export type EducationEntry = {
+  degree: string
+  field: string
+  institution: string
+  year: string
+}
+
+export const education: EducationEntry[] = [
+  {
+    degree: 'B.Tech',
+    field: 'Electrical and Electronics Engineering',
+    institution: 'Dayananda Sagar Academy Of Technology And Management',
+    year: 'May 2018',
+  },
+  {
+    degree: 'Pre University',
+    field: 'Computer Science',
+    institution: 'Vidya Vardhaka Sangha',
+    year: 'May 2014',
   },
 ]
 
@@ -107,7 +135,7 @@ export const experiences: ExperienceEntry[] = [
     description:
       'Leading quality engineering for EdTech products used by K-12 schools worldwide. Driving test strategy, automation architecture, and release quality sign-off across product teams.',
     highlights: [
-      'Built and maintained Cypress-based E2E automation suite covering critical user workflows',
+      'Built and scaled a Playwright-based test automation framework for end-to-end and regression testing, improving execution speed and reliability',
       'Set up CI/CD pipelines to execute automated test suites on regular intervals and on every deployment',
       'Implemented performance and load testing applications using k6 to ensure system scalability',
       'Collaborated with cross-functional teams on test planning, risk assessment, and release readiness',

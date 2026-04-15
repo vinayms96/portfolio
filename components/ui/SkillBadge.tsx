@@ -9,21 +9,30 @@ import {
   SiK6,
   SiDocker,
   SiMysql,
+  SiGit,
+  SiGithubactions,
+  SiJira,
+  SiPostman,
 } from 'react-icons/si'
-import { FaJava, FaTheaterMasks } from 'react-icons/fa'
+import { FaJava, FaTheaterMasks, FaAws } from 'react-icons/fa'
 import type { IconType } from 'react-icons'
 
 // Playwright uses theater masks in its own branding — FaTheaterMasks is the closest match
 const iconMap: Record<string, IconType> = {
-  Playwright: FaTheaterMasks,
-  Cypress:    SiCypress,
-  Selenium:   SiSelenium,
-  Java:       FaJava,
-  JavaScript: SiJavascript,
-  TypeScript: SiTypescript,
-  k6:         SiK6,
-  Docker:     SiDocker,
-  MySQL:      SiMysql,
+  Playwright:      FaTheaterMasks,
+  Cypress:         SiCypress,
+  Selenium:        SiSelenium,
+  Java:            FaJava,
+  JavaScript:      SiJavascript,
+  TypeScript:      SiTypescript,
+  k6:              SiK6,
+  Docker:          SiDocker,
+  AWS:             FaAws,
+  MySQL:           SiMysql,
+  Git:             SiGit,
+  'GitHub Actions': SiGithubactions,
+  JIRA:            SiJira,
+  Postman:         SiPostman,
 }
 
 interface SkillBadgeProps {
